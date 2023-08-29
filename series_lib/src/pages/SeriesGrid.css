@@ -1,0 +1,75 @@
+:root {
+    --background: #ffffff;
+    --primary: #8371ea;
+    --seconday: #c9c1f6;
+    --accent: #391ecc;
+    --text: #0a0523;
+    --heart: #DC143C;
+
+    --background-dark: #0a0523;
+    --primary-dark: #8371ea;
+    --secondary-dark: #07041b;
+    --accent-dark: #a294ef;
+    --text-dark: #ffffff;
+}
+
+.container .title {
+    color: var(--text);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.title .query-text {
+    color: var(--accent);
+}
+
+.series-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.series-container div {
+    width: 30%;
+    color: var(--accent);
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--seconday);
+    padding: 1rem;
+}
+
+.series-container div img {
+    max-width: 100%;
+}
+
+.series-container div img,
+.series-container div h2,
+.series-container div p {
+    margin-bottom: 1rem;
+}
+
+.series-container div svg {
+    color: var(--heart);
+}
+
+.series-container div a {
+    background: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 4px;
+    color: var(--accent);
+    padding: 1rem .5rem;
+    transition: .4s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.series-container div a:hover {
+    background: transparent;
+    color: var(--primary);
+}
