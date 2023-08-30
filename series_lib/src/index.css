@@ -24,7 +24,7 @@
 }
 
 body {
-    background: var(--background);
+    background-image: linear-gradient(to right bottom, #8371ea, #725ee3, #614adc, #4e36d4, #391ecc);
     color: var(--text);
 }
 
