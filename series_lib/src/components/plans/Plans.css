@@ -49,6 +49,7 @@
 
 .plan-container button {
     background: var(--accent);
+    color: var(--background);
     border: none;
     padding: .7rem;
     font-size: 1.1rem;
@@ -56,14 +57,23 @@
     border-radius: 10px;
 }
 
-.plan-container button a{
-    color: var(--background);
-}
-
 .plan-container button:hover {
     background: var(--background);
+    color: var(--accent);
 }
 
-.plan-container button a:hover {
-    color: var(--accent);
+@media screen and (max-width: 700px) {
+
+    .plans-container h1 {
+        font-size: 2rem;
+        padding: .4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .plans-container h1 {
+        font-size: 1.6rem;
+        padding: .5rem;
+    }
 }

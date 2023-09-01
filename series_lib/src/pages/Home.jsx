@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
+
 import SerieCard from '../components/SerieCard';
-import Plans from '../components/Plans';
+import Plans from '../components/plans/Plans';
+import Accordion from '../components/accordion/Accordion';
+import Banner from '../components/banner/Banner';
+
 import './SeriesGrid.css';
-import Accordion from '../components/Accordion';
-import photo from '../assets/home-img.png';
 
 const seriesUrl = import.meta.env.VITE_API_SERIES;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -33,28 +35,24 @@ const Home = () => {
 
     <div className="wrapper">
 
-      <img src={photo} className='home-img'/>
+      <Banner />
 
       <div className='container'>
-        <h2 className="title">Assista grátis, com anúncios.</h2>
-        <div className="series-container">
-          {topSeries.length === 0 && <p>Carregando...</p>}
-          {topSeries.length > 0 &&
-            topSeries.slice(12,18).map((serie) => <SerieCard key={serie.id} serie={serie} />)}
-        </div>
 
-        <Plans/>
+        <Plans />
 
-        <h2 className="title">Assine para ter o melhor que temos a oferecer</h2>
-        <h3 className='subtitle'>+100 séries e filmes para assistir sem anúncios.</h3>
+        <h2 className="title">
+          Subscribe to get the best we have to offer</h2>
+        <h3 className='subtitle'>
+          +100 series and movies to watch without ads.</h3>
         <div className="series-container">
-          {topSeries.length === 0 && <p>Carregando...</p>}
+          {topSeries.length === 0 && <p>Loading...</p>}
           {topSeries.length > 0 &&
-            topSeries.slice(0,9).map((serie) => <SerieCard key={serie.id} serie={serie} />)}
+            topSeries.slice(0, 9).map((serie) => <SerieCard key={serie.id} serie={serie} />)}
         </div>
       </div>
 
-      <Accordion/>
+      <Accordion />
 
     </div>
   )

@@ -23,7 +23,8 @@
 }
 
 .series-container div {
-    width: 30%;
+    margin: 0 auto;
+    width: 400px;
     color: var(--text);
     margin-bottom: 2.5rem;
     display: flex;
@@ -31,6 +32,7 @@
     justify-content: space-between;
     background-color: var(--primary);
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 .series-container div img {
@@ -72,11 +74,18 @@
     font-weight: 400;
 }
 
-.home-img {
-    width: 100%;
-    background-image: url(../assets/series.webp);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .5;
+@media screen and (max-width: 700px) {
+
+    .container .title {
+        font-size: 2rem;
+        padding: .4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .container .title {
+        font-size: 1.6rem;
+        padding: .5rem;
+    }
 }

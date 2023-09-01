@@ -25,11 +25,11 @@
    
 }
 
-#navbar h2 a {
+#navbar h2  {
     color: var(--accent);
 }
 
-#navbar h2 a {
+#navbar h2  {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -39,17 +39,29 @@
     background: var(--accent);
     color: var(--background);
     border: none;
-    padding: .5rem;
+    padding: .5rem 1.5rem;
     font-size: 1.3rem;
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: .4s;
     border-radius: 10px;
-    gap: .5rem;
 }
 
 #navbar  button:hover {
     background: var(--background);
     color: var(--accent);
+}
+
+@media screen and (max-width: 380px ) {
+
+    #navbar h2  {
+        font-size: 1.2rem;
+    }
+    
+    #navbar  button {
+        padding: .11rem 1.5rem;
+        font-size: 1rem;
+    }
+    
 }

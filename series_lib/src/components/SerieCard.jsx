@@ -12,7 +12,7 @@ const SerieCard = ({ serie, showLink = true }) => {
             <p>
                 <AiFillHeart /> {serie.vote_average}
             </p>
-            {showLink && <Link to={`/serie/${serie.id}`}>Saiba mais</Link>}
+            {showLink && <Link to={`/serie/${serie.id}`}>Details</Link>}
 
         </div>
     )
