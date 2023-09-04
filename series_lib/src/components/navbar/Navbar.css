@@ -25,11 +25,11 @@
    
 }
 
-#navbar h2  {
+#navbar h2 a {
     color: var(--accent);
 }
 
-#navbar h2  {
+#navbar h2 a {
     display: flex;
     align-items: center;
     gap: .5rem;
@@ -55,7 +55,7 @@
 
 @media screen and (max-width: 380px ) {
 
-    #navbar h2  {
+    #navbar h2 {
         font-size: 1.2rem;
     }
     

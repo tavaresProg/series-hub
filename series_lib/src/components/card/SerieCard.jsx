@@ -9,6 +9,7 @@ const SerieCard = ({ serie, showLink = true }) => {
         <div className='serie-card'>
             <img src={imageUrl + serie.poster_path} alt={serie.name} />
             <h2>{serie.name}</h2>
+            <h2>{serie.title}</h2>
             <p>
                 <AiFillHeart /> {serie.vote_average}
             </p>

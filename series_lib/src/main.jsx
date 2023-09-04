@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from './App.jsx';
 import Home from './pages/Home';
-import Serie from './pages/Serie.jsx';
+import Serie from './pages/serie/Serie.jsx';
 import Search from './pages/Search';
 
 import './index.css'

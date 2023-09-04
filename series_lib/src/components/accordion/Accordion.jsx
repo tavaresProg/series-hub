@@ -9,10 +9,10 @@ const Accordion = () => {
             <div className="question">
                 <div className="title">
                     <input type="radio" name="title" id="title-1" />
-                    <label htmlFor="title-1">What is Series Prime?
+                    <label htmlFor="title-1">What is Series Hub?
                         <span><BiSolidDownArrow /></span>
                     </label>
-                    <p>It is the most complete series and movie streaming service in the US.</p>
+                    <p>It is the most complete series streaming service in the world.</p>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@ const Accordion = () => {
                         Can I use the service for free?
                         <span><BiSolidDownArrow /></span>
                     </label>
-                    <p>You can watch a limited selection of series and movies for free with ads.</p>
+                    <p>You can watch a limited selection of series for free with ads.</p>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@ const Accordion = () => {
                         <span><BiSolidDownArrow /></span>
                     </label>
                     <p>
-                        Complete catalog of series and movies without ads, up to 5 screens and the possibility to watch offline.</p>
+                        Complete catalog of series without ads, up to 5 screens and the possibility to watch offline.</p>
                 </div>
             </div>
 

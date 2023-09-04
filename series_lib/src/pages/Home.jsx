@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 
-import SerieCard from '../components/SerieCard';
-import Plans from '../components/plans/Plans';
-import Accordion from '../components/accordion/Accordion';
 import Banner from '../components/banner/Banner';
+import Plans from '../components/plans/Plans';
+import SerieCard from '../components/card/SerieCard';
+import Accordion from '../components/accordion/Accordion';
+import SearchField from '../components/search/SearchField';
 
-import './SeriesGrid.css';
+import '../components/card/SeriesGrid.css';
+import Footer from '../components/footer/Footer';
 
 const seriesUrl = import.meta.env.VITE_API_SERIES;
 const apiKey = import.meta.env.VITE_API_KEY;
@@ -44,7 +46,7 @@ const Home = () => {
         <h2 className="title">
           Subscribe to get the best we have to offer</h2>
         <h3 className='subtitle'>
-          +100 series and movies to watch without ads.</h3>
+          +1000 Series to watch without ads.</h3>
         <div className="series-container">
           {topSeries.length === 0 && <p>Loading...</p>}
           {topSeries.length > 0 &&
@@ -52,7 +54,11 @@ const Home = () => {
         </div>
       </div>
 
+      <SearchField />
+
       <Accordion />
+
+      <Footer/>
 
     </div>
   )

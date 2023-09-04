@@ -3,7 +3,7 @@ import './Banner.css'
 const Banner = () => {
   return (
     <div className = "home-banner">
-        <h1>Movies and Series, all in one place.</h1>
+        <h1>The biggest Series catalog for you.</h1>
     </div>
   )
 }
