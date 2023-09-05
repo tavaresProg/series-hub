@@ -39,6 +39,7 @@
 .plans-container>p {
     color: var(--text);
     font-weight: 500;
+    padding: .4rem;
 }
 
 .plan-container p {
