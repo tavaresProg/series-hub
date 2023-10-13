@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
 import { AiFillHeart } from 'react-icons/ai';
@@ -21,3 +23,14 @@ const SerieCard = ({ serie, showLink = true }) => {
 
 export default SerieCard;
 
+SerieCard.propTypes = {
+    serie: PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      title: PropTypes.string,
+      poster_path: PropTypes.string.isRequired,
+      vote_average: PropTypes.number.isRequired,
+    }).isRequired,
+    showLink: PropTypes.bool,
+  };
+  

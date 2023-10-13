@@ -2,6 +2,10 @@
     --heart: #DC143C;
 }
 
+.container {
+    color: var(--accent);
+}
+
 .container .title {
     color: var(--background);
     font-size: 2rem;

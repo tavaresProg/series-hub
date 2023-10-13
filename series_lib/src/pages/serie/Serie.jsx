@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import SerieCard from "../../components/card/SerieCard";
+import Footer from "../../components/footer/Footer"
 
 import './Serie.css';
 
@@ -35,6 +36,7 @@ const Serie = () => {
           <p><strong>Total episodes:</strong> {serie.number_of_episodes}</p>
           <p className="overview">{serie.overview}</p>
         </div>
+        <Footer/>
       </>)}
     </div>
   )
